@@ -17,7 +17,7 @@ let caro1 = "./images/caro1.jpeg";
 let caro2 = "./images/caro2.jpeg";
 let caro3 = "./images/caro3.jpeg";
 
-let sect2Img = "./images/sect2pics.jpeg";
+let sect2Img = "./images/chloe.jpeg";
 
 
 export default function Home() {
@@ -147,7 +147,7 @@ export default function Home() {
 
         <div className={`${styles.secondSect2Div} col-lg-5 col-sm-12`} >
 
-          <img src={sect2Img} alt="picture" className='img-fluid' />
+          <img src={sect2Img} alt="nysc" className='img-fluid' />
 
 
         </div>
