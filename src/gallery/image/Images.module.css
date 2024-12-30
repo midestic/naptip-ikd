@@ -1,0 +1,24 @@
+.imageDiv {
+    overflow: hidden;
+    margin-top: 50px;
+
+
+}
+
+.imageDiv img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+
+
+}
+
+.imageDiv img:hover {
+    transform: scale(1.1);
+
+}
+
+.imageDiv img {
+
+    cursor: pointer;
+}

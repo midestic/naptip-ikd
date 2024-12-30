@@ -1,0 +1,60 @@
+.videoDiv {
+
+    margin-top: 50px;
+}
+
+.videoDiv video {
+
+    cursor: pointer;
+
+}
+
+
+.inDiv {
+
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px gray;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding: 20px;
+    border: 1px solid gray;
+    background-color: #a3c588;
+}
+
+.inDiv p {
+
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+    .videoDiv {
+
+        margin-top: 50px;
+        text-align: center;
+        font-weight: bolder;
+    }
+
+    .videoDiv video {
+
+        cursor: pointer;
+
+    }
+
+
+    .inDiv {
+
+        border-radius: 10px;
+        box-shadow: 4px 4px 4px gray;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        padding: 20px;
+        border: 1px solid gray;
+        background-color: #a3c588;
+    }
+
+    .inDiv p {
+
+        color: white;
+    }
+}

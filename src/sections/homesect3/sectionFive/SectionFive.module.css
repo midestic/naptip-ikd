@@ -1,0 +1,118 @@
+/* .SectionFiveDiv {} */
+
+
+.gridRow {
+
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+
+    gap: 20px;
+    padding: 10px;
+    transform: translateY(10px);
+
+}
+
+
+
+
+.divOne h1 {
+
+    color: #ffbb2c;
+    margin-right: 10px;
+}
+
+.divTwo h1 {
+    color: #5578ff;
+}
+
+.divThree h1 {
+    color: #e80368;
+}
+
+.divFour h1 {
+
+    color: #e361ff;
+}
+
+.divFive h1 {
+    color: #47aeff;
+}
+
+.divSix h1 {
+    color: #ffa76e;
+}
+
+.divSeven h1 {
+
+    color: #29cc61;
+    margin-right: 10px;
+}
+
+.divEight h1 {
+
+    color: #b20969;
+}
+
+
+@media (max-width: 768px) {
+
+    .gridRow p {
+
+        font-size: 18px;
+    }
+
+
+    .gridRow {
+
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        gap: 20px;
+        padding: 10px;
+        transform: translateY(10px);
+
+    }
+
+
+
+
+    .divOne h1 {
+
+        color: #ffbb2c;
+        margin-right: 10px;
+    }
+
+    .divTwo h1 {
+        color: #5578ff;
+    }
+
+    .divThree h1 {
+        color: #e80368;
+    }
+
+    .divFour h1 {
+
+        color: #e361ff;
+    }
+
+    .divFive h1 {
+        color: #47aeff;
+    }
+
+    .divSix h1 {
+        color: #ffa76e;
+    }
+
+    .divSeven h1 {
+
+        color: #29cc61;
+        margin-right: 10px;
+    }
+
+    .divEight h1 {
+
+        color: #b20969;
+    }
+
+}

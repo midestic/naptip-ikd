@@ -1,0 +1,139 @@
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 20px 40px; */
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 200px;
+  box-shadow: 4px 4px #989f72;
+
+  margin-top: 10px;
+
+}
+
+/* .navWrapper {
+  padding: 20px;
+} */
+
+.navLogo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.menuDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+  /* border: 1px solid black; */
+
+}
+
+.navUl {
+  /* border: 1px solid black; */
+  /* width: 40%; */
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: bolder;
+
+}
+
+.menuDiv a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #343a40;
+  padding: 8px 12px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  text-align: center;
+}
+
+.menuDiv a:hover {
+  color: #ffffff;
+  background-color: #989f72;
+
+}
+
+.linkWebsite {
+  border: none;
+
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+  .navContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    margin-top: 0px;
+
+  }
+
+
+  .menuDiv a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #343a40;
+    padding: 8px 12px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    text-align: center;
+  }
+
+
+  .navLogo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+  }
+
+
+  .navUl {
+    /* border: 1px solid black; */
+    /* width: 40%; */
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bolder;
+
+  }
+
+  .menuDiv a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #343a40;
+    padding: 8px 12px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    text-align: center;
+  }
+
+  .menuDiv a:hover {
+    color: #ffffff;
+    background-color: #989f72;
+
+  }
+
+  .linkWebsite {
+    border: none;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+
+  }
+
+
+
+
+}

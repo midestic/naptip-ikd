@@ -1,13 +1,121 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.border {
+    border: 1px solid black;
+    /* height: auto; */
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.content {
+
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+
+}
+
+
+
+
+.cardCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.cardCont:hover {
+
+    border: 1px solid #a3c588;
+    border-radius: 5px;
+
+}
+
+.centreDivItems {
+
+    text-align: center;
+}
+
+.side-by-side {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.float {
+    float: right;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.transparent-background {
+    background: transparent !important;
+}
+
+.colorWhite {
+
+    color: white;
+
+}
+
+.noBorder {
+    border: none;
+}
+
+
+
+
+
+p {
+    font-family: "Ysabeau SC", serif;
+}
+
+.cardStyling {
+    /* border-radius: 40px; */
+    box-shadow: 4px 4px 4px 4px gray;
+
+
+
+}
+
+.cardBodyStyle {
+    background: gray;
+    background-color: #a3c588;
+    color: white;
+}
+
+.cardH5 {
+    font-family: "Noto Sans PhagsPa", serif;
+    font-weight: bolder;
+
+
+}
+
+.whiteFont {
+
+    color: white;
+}
+
+.khakiColor {
+
+    color: #a3c588;
+}
+
+.noHover {
+
+    color: white;
+}
+
+
+.logo {
+
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }

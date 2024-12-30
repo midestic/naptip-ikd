@@ -1,0 +1,59 @@
+.homeSectThree {
+    text-align: center;
+    /* background-color: rgb(187, 180, 180); */
+    background-color: #a3c588;
+    padding: 50px;
+    margin-bottom: 100px;
+}
+
+.homeSectThree h1 {
+
+    color: white;
+    font-family: "Noto Sans PhagsPa", serif;
+    font-weight: bolder;
+}
+
+
+.homeSectThree p {
+    font-family: "Bagel Fat One", serif;
+    color: white;
+
+
+}
+
+
+@media (max-width: 768px) {
+
+
+    .homeSectThree {
+        text-align: center;
+        /* background-color: rgb(187, 180, 180); */
+        background-color: #a3c588;
+        padding: 10px;
+        margin-bottom: 100px;
+
+    }
+
+
+    .homeSectThree div {
+
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .homeSectThree h1 {
+
+        color: white;
+        font-family: "Noto Sans PhagsPa", serif;
+
+        font-size: 60px;
+    }
+
+
+    .homeSectThree p {
+        font-family: "Bagel Fat One", serif;
+        color: white;
+        font-size: 40px;
+
+    }
+}

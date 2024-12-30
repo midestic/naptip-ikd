@@ -1,0 +1,178 @@
+.sectFourComponent {
+
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.sectFourContainer {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    height: auto;
+
+}
+
+.sectFourContainer div {
+    height: 400px;
+
+    text-align: center;
+
+}
+
+.sectFourContainer div div {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20%;
+}
+
+.firstDiv {
+
+    background-color: #a3c588;
+    border: none;
+    padding: 30px;
+    box-shadow: 2px 2px 2px 2px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+.firstDiv h1 {
+    font-family: "Noto Sans PhagsPa", serif;
+    color: white;
+
+}
+
+.firstDiv p {
+    font-family: "Bagel Fat One", serif;
+    color: white;
+    font-size: 20px;
+}
+
+.inDiv {
+    /* border: 1px solid rgb(255, 255, 255); */
+    box-shadow: 2px 2px 2px 2px #525b2c;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 5px;
+    height: 100%;
+
+}
+
+.inDiv h1 {
+
+    font-family: "Noto Sans PhagsPa", serif;
+    color: #a3c588;
+
+}
+
+.inDiv h4 {
+
+    color: #525b2c;
+}
+
+.inDiv p {
+    font-family: "Bagel Fat One", serif;
+    color: #a3c588;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .sectFourComponent {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px;
+        /* border: 1px solid; */
+    }
+
+
+
+    .sectFourContainer {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        height: auto;
+
+    }
+
+    .sectFourContainer div {
+        height: auto;
+        /* border: 1px solid black; */
+        text-align: center;
+
+    }
+
+    .sectFourContainer div div {
+        text-align: center;
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        border-radius: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20%;
+    }
+
+    .firstDiv {
+
+        background-color: #a3c588;
+        border: none;
+        padding: 30px;
+        box-shadow: 2px 2px 2px 2px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+
+    }
+
+    .firstDiv h1 {
+        font-family: "Noto Sans PhagsPa", serif;
+        color: white;
+
+    }
+
+    .firstDiv p {
+        font-family: "Bagel Fat One", serif;
+        color: white;
+    }
+
+    .inDiv {
+        border: 1px solid rgb(255, 255, 255);
+        box-shadow: 2px 2px 2px 2px #525b2c;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 5px;
+        height: auto;
+
+    }
+
+    .inDiv h1 {
+
+        font-family: "Noto Sans PhagsPa", serif;
+        color: #a3c588;
+        font-size: 50px;
+
+    }
+
+    .inDiv h4 {
+
+        color: #525b2c;
+    }
+
+    .inDiv p {
+        font-family: "Bagel Fat One", serif;
+        color: #a3c588;
+        font-size: 30px;
+    }
+}

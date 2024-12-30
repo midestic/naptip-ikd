@@ -1,0 +1,49 @@
+.videoPage {
+    margin-top: 130px;
+}
+
+
+
+
+.sectionOne {
+
+    text-align: center;
+    background-color: #a3c588;
+    color: white;
+    font-weight: bolder;
+
+
+}
+
+
+.sectionOne p {
+
+    font-family: "Noto Sans PhagsPa", serif;
+}
+
+@media (max-width: 768px) {
+
+
+    .videoPage {
+        margin-top: 130px;
+    }
+
+
+
+
+    .sectionOne {
+
+        text-align: center;
+        background-color: #a3c588;
+        color: white;
+        font-weight: bolder;
+
+
+    }
+
+
+    .sectionOne p {
+
+        font-family: "Noto Sans PhagsPa", serif;
+    }
+}

@@ -1,0 +1,46 @@
+.eventComponent {
+
+    margin-top: 120px;
+}
+
+
+
+
+.sectionOne {
+    text-align: center;
+    background-color: #a3c588;
+    padding: 50px;
+    color: white;
+    font-weight: bolder;
+}
+
+.sectionOne p {
+
+    font-family: "Bagel Fat One", serif;
+}
+
+
+@media (max-width: 768px) {
+
+    .eventComponent {
+
+        margin-top: 130px;
+    }
+
+
+
+
+    .sectionOne {
+        text-align: center;
+        background-color: #a3c588;
+        color: white;
+        font-weight: bolder;
+        padding: 20px;
+    }
+
+    .sectionOne p {
+
+        font-family: "Noto Sans PhagsPa", serif;
+    }
+
+}

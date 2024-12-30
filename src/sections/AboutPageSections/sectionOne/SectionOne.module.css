@@ -1,0 +1,33 @@
+.aboutSectionOne {
+    text-align: center;
+    background-color: #a3c588;
+    padding: 50px;
+    color: white;
+    font-weight: bolder;
+}
+
+.aboutSectionOne p {
+
+    font-family: "Noto Sans PhagsPa", serif;
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    .aboutSectionOne {
+        text-align: center;
+        background-color: #a3c588;
+        padding: 20px;
+        color: white;
+        font-weight: bolder;
+    }
+
+    .aboutSectionOne p {
+
+        font-family: "Noto Sans PhagsPa", serif;
+
+    }
+
+}

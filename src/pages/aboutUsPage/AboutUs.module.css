@@ -1,0 +1,14 @@
+.aboutUspage {
+
+    margin-top: 180px;
+}
+
+
+@media (max-width: 768px) {
+
+    .aboutUspage {
+
+        margin-top: 120px;
+    }
+
+}

@@ -1,0 +1,355 @@
+.homepage {
+  margin-top: 0;
+}
+
+
+
+.sectiontwo {
+  transform: translateY(50px);
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  /* box-shadow: 4px 4px 4px gray; */
+  padding: 10px;
+}
+
+
+.caroCaption {
+
+  top: 120px;
+}
+
+
+.caroTitle {
+  font-family: "Noto Sans PhagsPa", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+
+
+
+.caroText {
+
+  font-family: "Bagel Fat One", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #989f72;
+  font-size: 30px;
+}
+
+.caroBtn {
+  background: none;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 20px;
+
+}
+
+.caroBtn:hover {
+
+  background-color: #989f72;
+  /* Change background color on hover */
+  color: white;
+
+}
+
+
+.caro2Text {
+
+  font-family: "Bagel Fat One", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  font-size: 30px;
+  justify-content: flex-start;
+}
+
+.caro2Btn {
+  background: none;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 20px;
+
+}
+
+.caro2Btn:hover {
+
+  background-color: #989f72;
+  color: white;
+
+}
+
+.caro3Caption {
+
+  top: 120px;
+}
+
+
+
+
+
+/* SECTION 2 */
+
+.sect2Title {
+  font-family: "Noto Sans PhagsPa", serif;
+
+}
+
+.sect2subTitle {
+
+  font-family: "Bagel Fat One", serif;
+}
+
+
+
+
+.sect2InnerDiv {
+
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 10px;
+  background-color: #868f62;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px;
+
+}
+
+/* .sect2InnerDiv:hover {
+
+  transform: scale(1.1);
+} */
+
+.sect2InnerDiv p {
+
+  font-size: 20px;
+  font-family: "Bagel Fat One", serif;
+  /* color: #232611; */
+  color: white;
+}
+
+
+.sect2Btn {
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  margin-top: 10px;
+  background-color: #868f62;
+  float: right;
+}
+
+
+
+.sect2Btn:hover {
+  transform: scale(1.1);
+  box-shadow: 4px 4px 4px gray;
+
+}
+
+
+.secondSect2Div {
+  /* border: 1px solid black; */
+  margin-top: 100px;
+  box-shadow: 2px 4px 4px 4px gray;
+  border-radius: 20px;
+}
+
+
+.secondSect2Div img {
+
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+  .homepage {
+    margin-top: 130px
+  }
+
+
+
+  .sectiontwo {
+    transform: translateY(50px);
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+  }
+
+
+  .caroCaption {
+
+    top: 1px;
+  }
+
+
+  .caroTitle {
+    font-family: "Noto Sans PhagsPa", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10px;
+  }
+
+
+
+  .caroText {
+
+    font-family: "Bagel Fat One", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #989f72;
+    font-size: 10px;
+  }
+
+  .caroBtn {
+    background: none;
+    color: #989f72;
+    border: 1px solid #989f72;
+    /* padding: 10px; */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 20px;
+
+  }
+
+  .caroBtn:hover {
+
+    background-color: #989f72;
+    /* Change background color on hover */
+    color: white;
+
+  }
+
+
+  .caro2Text {
+
+    font-family: "Bagel Fat One", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 10px;
+    justify-content: flex-start;
+  }
+
+  .caro2Btn {
+    background: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 20px;
+
+  }
+
+  .caro2Btn:hover {
+
+    background-color: #989f72;
+    color: white;
+
+  }
+
+  .caro3Caption {
+
+    top: 120px;
+  }
+
+  /* SECTION 2 */
+
+
+  .sect2Title {
+    font-family: "Noto Sans PhagsPa", serif;
+
+
+  }
+
+  .sect2subTitle {
+
+    font-family: "Bagel Fat One", serif;
+  }
+
+
+
+
+  .sect2InnerDiv {
+
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 10px;
+    background-color: #868f62;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px;
+
+  }
+
+  /* .sect2InnerDiv:hover {
+
+  transform: scale(1.1);
+} */
+
+  .sect2InnerDiv p {
+
+    font-size: 20px;
+    font-family: "Bagel Fat One", serif;
+    /* color: #232611; */
+    color: white;
+  }
+
+
+  .sect2Btn {
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    margin-top: 10px;
+    background-color: #868f62;
+    float: right;
+
+    margin-bottom: 20px;
+  }
+
+
+
+  .sect2Btn:hover {
+    transform: scale(1.1);
+    box-shadow: 4px 4px 4px gray;
+
+  }
+
+
+  .secondSect2Div {
+    /* border: 1px solid black; */
+    margin-top: 100px;
+    box-shadow: 2px 4px 4px 4px gray;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+
+  .secondSect2Div img {
+
+    margin-top: 10px;
+  }
+
+
+
+
+}

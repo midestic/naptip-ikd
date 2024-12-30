@@ -1,0 +1,38 @@
+.contactPage {
+    margin-top: 100px;
+}
+
+
+
+.sectionOne {
+    text-align: center;
+    background-color: #a3c588;
+    padding: 50px;
+    color: white;
+    font-weight: bolder;
+}
+
+
+@media (max-width: 768px) {
+
+    .contactPage {
+        margin-top: 130px;
+    }
+
+
+
+    .sectionOne {
+        text-align: center;
+        background-color: #a3c588;
+        padding: 10px;
+        color: white;
+        font-weight: bolder;
+    }
+
+    .sectionOne p {
+        font-family: "Noto Sans PhagsPa", serif;
+
+    }
+
+
+}

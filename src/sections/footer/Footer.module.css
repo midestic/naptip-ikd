@@ -1,0 +1,110 @@
+.footerComponent {
+
+  margin-top: 50px;
+  background-color: #a3c588;
+  padding: 20px;
+}
+
+.footerComponent p {
+  color: white;
+}
+
+.footerComponent h3 {
+  color: white;
+}
+
+
+.footerComponent h4 {
+  color: white;
+}
+
+.footerComponent a {
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+  font-family: "Ysabeau SC", serif;
+}
+
+.footerComponent ul {
+  background-color: #a3c588;
+}
+
+.footerContainer {
+
+
+  padding-top: 10px;
+
+}
+
+
+.lastFoot {
+
+  padding: 2px;
+  text-align: center;
+  background-color: #a3c588;
+
+}
+
+
+@media (max-width: 768px) {
+
+  .footerComponent {
+
+    margin-top: 50px;
+    background-color: #a3c588;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footerComponent p {
+    color: white;
+    font-size: 20px;
+  }
+
+  .footerComponent h3 {
+    color: white;
+  }
+
+
+  .footerComponent h4 {
+    color: white;
+  }
+
+  .footerComponent a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Ysabeau SC", serif;
+  }
+
+  .footerComponent ul {
+    background-color: #a3c588;
+  }
+
+  .footerContainer {
+
+
+    padding-top: 10px;
+
+  }
+
+
+  .footerContainer div {
+
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+  }
+
+
+  .lastFoot {
+
+    padding: 2px;
+    text-align: center;
+    background-color: #a3c588;
+
+  }
+
+}
