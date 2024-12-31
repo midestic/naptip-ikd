@@ -1,12 +1,46 @@
-import styles from './Sectiontwo.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import styles from './Sectiontwo.module.css';
 import { faLocationDot } from '@fortawesome/duotone-light-svg-icons';
 import { faPhone } from '@fortawesome/duotone-light-svg-icons';
 import { faEnvelope } from '@fortawesome/duotone-light-svg-icons';
+import { useState } from 'react';
+import { db } from '../../../firebase-config';
+import { collection, addDoc } from "firebase/firestore";
+
+
 
 
 
 export default function SectionTwo() {
+
+
+
+    const [newName, setNewName] = useState("");
+    const [newEmail, setNewEmail] = useState("");
+    const [newMessage, setNewMessage] = useState("");
+
+
+    const usersCollectionRef = collection(db, "users")
+
+
+    const sendData = async (e) => {
+        e.preventDefault();
+
+
+
+        try {
+            await addDoc(usersCollectionRef, { name: newName, email: newEmail, message: newMessage });
+
+
+            setNewName("");
+            setNewEmail("");
+            setNewMessage("");
+        } catch (error) {
+            console.error("Error adding document: ", error);
+        }
+    };
+
+
 
     return (
 
@@ -68,36 +102,39 @@ export default function SectionTwo() {
 
 
 
-                        <form className={`${styles.form}  `}>
+                        <form className={`${styles.form}`} onSubmit={sendData}>
 
 
                             <div className={`${styles.nameAndEmailDiv} row `}>
 
 
                                 <div className={`${styles.inpDiv} col-lg-6 col-12 mb-3`}>
-                                    <input className={`${styles.inputBox} w-100`} type="text" required placeholder='Your Name' />
+                                    <input className={`${styles.inputBox} w-100`} onChange={(event) => { setNewName(event.target.value) }}
+                                        type="text" value={newName} required placeholder='Your Name' />
                                 </div>
 
 
                                 <div className="col-lg-6 col-12 mb-3">
-                                    <input className={`${styles.inputBox} w-100`} type="email" required placeholder='Your Email' />
+                                    <input className={`${styles.inputBox} w-100`} onChange={(event) => { setNewEmail(event.target.value) }}
+                                        type="email" value={newEmail} required placeholder='Your Email' />
                                 </div>
 
                             </div>
 
                             <div className={`${styles.textAreaDiv} row`}>
 
-                                <textarea placeholder='Your Message......'></textarea>
+                                <textarea onChange={(event) => { setNewMessage(event.target.value) }}
+                                    value={newMessage} placeholder='Your Message......'></textarea>
 
                             </div>
 
-
+                            <div className={`${styles.btnDiv} row`} >
+                                <button className='btn' type='submit' >SUBMIT</button>
+                            </div>
 
                         </form>
 
-                        <div className={`${styles.btnDiv} row`} >
-                            <button className='btn '>SUBMIT</button>
-                        </div>
+
                     </div>
 
 

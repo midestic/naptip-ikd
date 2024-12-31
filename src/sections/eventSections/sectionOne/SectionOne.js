@@ -29,12 +29,13 @@ export default function SectionOne() {
                         <p>On this day, the NAPTIP CDS group visited Goodswill Secondary School as part of
                             our ongoing community sensitization campaigns. The visit aimed to educate students
                             and teachers about the dangers of human trafficking and the importance of prevention.
-                            Our president kicked off the event with an impactful introductory speech, outlining NAPTIP’s mission and efforts.
+                            Our president kicked off the event with an impactful introductory speech, outlining NAPTIP’s
+                            mission and efforts. <br />
 
                             Throughout the event, various CDS members took turns speaking and sensitizing the audience,
                             providing diverse perspectives and valuable insights. The highlight of the day was a powerful drama
-                            performed by our CDS members. The play depicted a scenario where a student named Aisha, portrayed by Cynthia,
-                            was being lured into trafficking by Brother Solomon, played by Midestic_JS. The drama underscored the
+                            performed by our CDS members. <br /> The play depicted a scenario where a student named Aisha, portrayed by Cynthia,
+                            was being lured into trafficking by Brother Solomon, played by Midestic_JS. <br /> The drama underscored the
                             manipulative tactics traffickers use and the critical role of vigilance and timely reporting.
                             The visit was a success, leaving a lasting impression on the students and teachers,
                             and reinforcing our commitment to combating human trafficking through education and awareness. </p>
@@ -56,22 +57,21 @@ export default function SectionOne() {
 
                         <h5>Visitation to House of Chloe Orphanage Home</h5>
                         <p><i>Monday, December 16th 2024</i></p>
-                        <p>On this day, the NAPTIP CDS group visited the House of Chloe Orphanage Home at Dele Kuti,
-                            Ebute Ikorodu, as part of our ongoing community sensitization campaigns. The visit aimed
-                            to educate the children and staff about the dangers of human trafficking and the importance
-                            of prevention. We were accompanied by our Local Government Inspector, as seen in the picture
-                            above, who also supported the initiative.
 
-                            Our president opened the event with an impactful introductory speech, outlining NAPTIP’s
-                            mission and efforts in combating human trafficking. Various CDS members took turns speaking,
-                            offering diverse perspectives and valuable insights to the children and staff.
-
-                            In addition to the sensitization session, we donated foodstuffs and other essential items
-                            to the orphanage, supporting their well-being. The visit was a success, leaving a lasting
-                            impression on the children and staff, and further reinforcing our commitment to raising
-                            awareness and preventing human trafficking.
+                        <p>  The sensitization programme held at the House of Chloe Orphanage Home on December
+                            16, 2024, was a resounding success. Organized by the following community
+                            development service groups (CDS), National Agency for the Prohibition
+                            of Trafficking in Persons (NAPTIP), Medical and Health, Sanitation,
+                            and Education. <br /> The sensitization aimed to demonstrate care and compassion
+                            for vulnerable orphans by providing essential needs and promoting their
+                            well-being and quality of life during this festive period. <br />
 
 
+                            The sensitization programme successfully achieved its objective, showcasing the collective effort of the corps
+                            members to support vulnerable people. This initiative highlighted the importance of inter community development
+                            service collaboration and community engagement. The members of staffs of the orphanage home gladly accepted the
+                            gifts and appreciated the volunteers for the hospitality shown.
+                            Attached herewith are pictorial evidence of the sensitization program and the receipt of items delivered.
 
                         </p>
 

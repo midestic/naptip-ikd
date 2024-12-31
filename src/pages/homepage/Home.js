@@ -6,10 +6,13 @@ import SectionThree from '../../sections/homesect3/sectionThree/SectionThree.js'
 import styles from './Home.module.css';
 import './Home.module.css';
 
+import { motion } from "motion/react"
+
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleCheck } from '@fortawesome/duotone-light-svg-icons';
 import { faArrowRight } from '@fortawesome/duotone-light-svg-icons';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -27,7 +30,7 @@ export default function Home() {
 
       {/* carousel */}
 
-      <div className={`{${styles.caroRow}} row`} >
+      <motion.div className={`{${styles.caroRow}} row`} >
 
         <div className={`${styles.caroCol} col-12`}>
 
@@ -48,7 +51,7 @@ export default function Home() {
 
                       </p>
 
-                      <button className={`${styles.caroBtn} `}> <b> SEE MORE</b></button>
+                      <NavLink to="images" > <button className={`${styles.caroBtn} `}> <b>SEE MORE</b></button> </NavLink>
 
 
                     </div>
@@ -66,7 +69,7 @@ export default function Home() {
                       <p className={`${styles.caro2Text}`} >Discover how Naptip is driving positive change and creating safer environments for everyone.
 
                       </p>
-                      <button className={`${styles.caro2Btn} `}> <b> SEE MORE</b></button>
+                      <NavLink to="images" >    <button className={`${styles.caro2Btn} `}> <b> SEE MORE</b></button> </NavLink>
                     </div>
                   </div>
                 </div>
@@ -80,7 +83,7 @@ export default function Home() {
                       <p className={`${styles.caro2Text}`}>Discover how Naptip is driving positive change and creating safer environments for everyone.
 
                       </p>
-                      <button className={`${styles.caro2Btn} `}> <b> SEE MORE</b></button>
+                      <NavLink to="images" >  <button className={`${styles.caro2Btn} `}> <b>SEE MORE  </b></button> </NavLink>
                     </div>
                   </div>
                 </div>
@@ -98,7 +101,7 @@ export default function Home() {
         </div>
 
 
-      </div>
+      </motion.div>
 
 
 
@@ -111,7 +114,7 @@ export default function Home() {
 
           <div >
             <div className="card-body">
-              <h4 className={`${styles.sect2Title} card-title`}>NAPTIP Community Development Group</h4>
+              <h4 className={`${styles.sect2Title} card-title`}>NAPTIP Community Development Service Group</h4>
 
               <h5 className={`${styles.sect2subTitle}`}><i> Overview of NAPTIP’s Role in Combating Human Trafficking, Victim Support, and Awareness Efforts</i></h5>
 
@@ -134,7 +137,7 @@ export default function Home() {
                   stakeholders to strengthen legal frameworks and policies. </p>
               </div>
 
-              <button className={styles.sect2Btn}><b>LEARN MORE <FontAwesomeIcon icon={faArrowRight} /></b></button>
+              <NavLink to="events" > <button className={styles.sect2Btn}><b>LEARN MORE <FontAwesomeIcon icon={faArrowRight} /></b></button> </NavLink>
 
 
             </div>
@@ -152,16 +155,12 @@ export default function Home() {
 
         </div>
 
-
-
       </div>
 
       <SectionThree />
       <SectionFour />
       <SectionFive />
       <SectionSix />
-
-
 
     </div>
   )

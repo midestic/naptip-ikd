@@ -16,6 +16,7 @@ import ImagePage from './pages/imagePage/ImagePage.js';
 import VideoPage from './pages/videopage/VideoPage.js';
 import Events from './pages/eventsPage/Events.js';
 import Contact from './pages/Contact/Contact.js';
+import ScrollToTop from './ScrollToTop.js';
 
 
 
@@ -41,11 +42,9 @@ const router = createBrowserRouter(
       <Route path='contact' element={<Contact />} />
 
 
-
-
-
-
     </Route>
+
+
   )
 )
 
@@ -54,6 +53,8 @@ const router = createBrowserRouter(
 function App() {
   return (
     <div className="App">
+
+
 
       <RouterProvider router={router} />
 

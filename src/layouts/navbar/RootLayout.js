@@ -10,13 +10,19 @@ let logo = './images/logo.jpg'
 export default function RootLayout() {
 
 
+
+
+
+
   function naptipSite() {
 
 
     window.open("https://naptip.gov.ng/", '_blank');
 
 
+
   }
+
 
   return (
     <div className={`${styles.navComponent} root-layout`} >
