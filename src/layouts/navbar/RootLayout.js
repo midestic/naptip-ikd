@@ -10,7 +10,12 @@ let logo = './images/logo.jpg'
 export default function RootLayout() {
 
 
-
+  const closeNavbar = () => {
+    const navbarCollapse = document.getElementById('navbarNavDropdown');
+    if (navbarCollapse.classList.contains('show')) {
+      navbarCollapse.classList.remove('show');
+    }
+  };
 
 
 
@@ -26,84 +31,75 @@ export default function RootLayout() {
 
   return (
     <div className={`${styles.navComponent} root-layout`} >
-
-
-      <nav className={` ${styles.navContainer} container navbar fixed-top navbar-expand-sm bg-body-tertiary `}  >
-        <div className={`${styles.navWrapper} container-fluid`} >
+      <nav className={` ${styles.navContainer} container navbar fixed-top navbar-expand-sm bg-body-tertiary `}>
+        <div className={`${styles.navWrapper} container-fluid`}>
           <a className={`${styles.navLogo} navbar-brand`} href='/'>
-
-            <img src={logo} alt="Bootstrap" className="logo" width="100" height="100"></img>
-
+            <img src={logo} alt="Logo" className="logo" width="100" height="100" />
           </a>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+
+
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span className="navbar-toggler-icon"></span>
           </button>
 
 
           <div className={`${styles.menuDiv} collapse navbar-collapse row`} id="navbarNavDropdown">
-            <ul className={`${styles.navUl} navbar-nav`} >
-
-
-              <li className="nav-item"> <a className="nav-link active" aria-current="page" href="#"> <NavLink to="/">Home</NavLink></a> </li>
-
-
+            <ul className={`${styles.navUl} navbar-nav`}>
               <li className="nav-item">
-
-                <a className="nav-link" href="#"> <NavLink to="aboutus">About Us </NavLink></a>
+                <a className="nav-link active" aria-current="page" href="#" onClick={closeNavbar}>
+                  <NavLink to="/">Home</NavLink>
+                </a>
               </li>
 
-
-
-
-
               <li className="nav-item">
-                <a className="nav-link" href="#">  <NavLink to='events'>Events </NavLink></a>
+                <a className="nav-link" href="#" onClick={closeNavbar}>
+                  <NavLink to="aboutus">About Us</NavLink>
+                </a>
               </li>
 
+              <li className="nav-item">
+                <a className="nav-link" href="#" onClick={closeNavbar}>
+                  <NavLink to="events">Events</NavLink>
+                </a>
+              </li>
 
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Gallery
                 </a>
-
-
                 <ul className="dropdown-menu">
-
-                  <li>  <a className="dropdown-item" href="#"><NavLink to="images">Images  </NavLink></a></li>
-
-                  <li><a className="dropdown-item" href="#"> <NavLink to='videos'>Videos</NavLink></a></li>
-
+                  <li><a className="dropdown-item" href="#" onClick={closeNavbar}><NavLink to="images">Images</NavLink></a></li>
+                  <li><a className="dropdown-item" href="#" onClick={closeNavbar}><NavLink to='videos'>Videos</NavLink></a></li>
                 </ul>
-
-
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#"> <NavLink to='contact'>Contact</NavLink> </a>
+                <a className="nav-link" href="#" onClick={closeNavbar}>
+                  <NavLink to='contact'>Contact</NavLink>
+                </a>
               </li>
 
               <li className={`${styles.linkWebsite} nav-item`}>
-                <button onClick={naptipSite} type="button" className="btn btn-outline-info "><b>NAPTIP WEBSITE </b> <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></button>
+                <button onClick={naptipSite} type="button" className="btn btn-outline-info">
+                  <b>NAPTIP WEBSITE </b> <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                </button>
               </li>
             </ul>
-
-
-
           </div>
         </div>
-      </nav >
-
-
-
+      </nav>
 
       <Outlet />
-
-
       <Footer />
-
-
-    </div >
-
+    </div>
 
   )
 
