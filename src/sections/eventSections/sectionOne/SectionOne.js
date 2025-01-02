@@ -71,7 +71,7 @@ export default function SectionOne() {
                             members to support vulnerable people. This initiative highlighted the importance of inter community development
                             service collaboration and community engagement. The members of staffs of the orphanage home gladly accepted the
                             gifts and appreciated the volunteers for the hospitality shown.
-                            Attached herewith are pictorial evidence of the sensitization program and the receipt of items delivered.
+
 
                         </p>
 

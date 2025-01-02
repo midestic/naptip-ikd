@@ -54,35 +54,35 @@ export default function RootLayout() {
           <div className={`${styles.menuDiv} collapse navbar-collapse row`} id="navbarNavDropdown">
             <ul className={`${styles.navUl} navbar-nav`}>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#" onClick={closeNavbar}>
+                <a className="nav-link active" aria-current="page" href="/" onClick={closeNavbar}>
                   <NavLink to="/">Home</NavLink>
                 </a>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#" onClick={closeNavbar}>
+                <a className="nav-link" onClick={closeNavbar}>
                   <NavLink to="aboutus">About Us</NavLink>
                 </a>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#" onClick={closeNavbar}>
+                <a className="nav-link" onClick={closeNavbar}>
                   <NavLink to="events">Events</NavLink>
                 </a>
               </li>
 
               <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Gallery
                 </a>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#" onClick={closeNavbar}><NavLink to="images">Images</NavLink></a></li>
-                  <li><a className="dropdown-item" href="#" onClick={closeNavbar}><NavLink to='videos'>Videos</NavLink></a></li>
+                  <li><a className="dropdown-item" onClick={closeNavbar}><NavLink to="images">Images</NavLink></a></li>
+                  <li><a className="dropdown-item" onClick={closeNavbar}><NavLink to='videos'>Videos</NavLink></a></li>
                 </ul>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#" onClick={closeNavbar}>
+                <a className="nav-link" onClick={closeNavbar}>
                   <NavLink to='contact'>Contact</NavLink>
                 </a>
               </li>
