@@ -1,42 +1,40 @@
-import { NavLink, Outlet } from "react-router-dom";
-import styles from './RootLayout.module.css'
+import { NavLink, Outlet, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import styles from "./RootLayout.module.css";
 import Footer from "../../sections/footer/Footer";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUpRightFromSquare } from "@fortawesome/duotone-light-svg-icons";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
-let logo = './images/logo.jpg'
+let logo = "./images/logo.jpg";
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 export default function RootLayout() {
-
-
-  const closeNavbar = () => {
-    const navbarCollapse = document.getElementById('navbarNavDropdown');
-    if (navbarCollapse.classList.contains('show')) {
-      navbarCollapse.classList.remove('show');
-    }
-  };
-
-
-
-  function naptipSite() {
-
-
-    window.open("https://naptip.gov.ng/", '_blank');
-
-
-
-  }
-
-
   return (
-    <div className={`${styles.navComponent} root-layout`} >
-      <nav className={` ${styles.navContainer} container navbar fixed-top navbar-expand-sm bg-body-tertiary `}>
+    <div className={`${styles.navComponent} root-layout`}>
+      <ScrollToTop /> {/* Place it here inside Router context */}
+      <nav
+        className={` ${styles.navContainer} container navbar fixed-top navbar-expand-sm bg-body-tertiary `}
+      >
         <div className={`${styles.navWrapper} container-fluid`}>
-          <a className={`${styles.navLogo} navbar-brand`} href='/'>
-            <img src={logo} alt="Logo" className="logo" width="100" height="100" />
+          <a className={`${styles.navLogo} navbar-brand`} href="/">
+            <img
+              src={logo}
+              alt="Logo"
+              className="logo"
+              width="100"
+              height="100"
+            />
           </a>
-
 
           <button
             className="navbar-toggler"
@@ -50,57 +48,65 @@ export default function RootLayout() {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-
-          <div className={`${styles.menuDiv} collapse navbar-collapse row`} id="navbarNavDropdown">
+          <div
+            className={`${styles.menuDiv} collapse navbar-collapse row`}
+            id="navbarNavDropdown"
+          >
             <ul className={`${styles.navUl} navbar-nav`}>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/" onClick={closeNavbar}>
-                  <NavLink to="/">Home</NavLink>
-                </a>
+                <NavLink to="/" className="nav-link active">
+                  Home
+                </NavLink>
               </li>
-
               <li className="nav-item">
-                <a className="nav-link" onClick={closeNavbar}>
-                  <NavLink to="aboutus">About Us</NavLink>
-                </a>
+                <NavLink to="aboutus" className="nav-link">
+                  About Us
+                </NavLink>
               </li>
-
               <li className="nav-item">
-                <a className="nav-link" onClick={closeNavbar}>
-                  <NavLink to="events">Events</NavLink>
-                </a>
+                <NavLink to="events" className="nav-link">
+                  Events
+                </NavLink>
               </li>
-
               <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a
+                  className="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   Gallery
                 </a>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" onClick={closeNavbar}><NavLink to="images">Images</NavLink></a></li>
-                  <li><a className="dropdown-item" onClick={closeNavbar}><NavLink to='videos'>Videos</NavLink></a></li>
+                  <li>
+                    <NavLink to="images" className="dropdown-item">
+                      Images
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="videos" className="dropdown-item">
+                      Videos
+                    </NavLink>
+                  </li>
                 </ul>
               </li>
-
               <li className="nav-item">
-                <a className="nav-link" onClick={closeNavbar}>
-                  <NavLink to='contact'>Contact</NavLink>
-                </a>
+                <NavLink to="contact" className="nav-link">
+                  Contact
+                </NavLink>
               </li>
-
               <li className={`${styles.linkWebsite} nav-item`}>
-                <button onClick={naptipSite} type="button" className="btn btn-outline-info">
-                  <b>NAPTIP WEBSITE </b> <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                <button type="button" className="btn btn-outline-info">
+                  <b>NAPTIP WEBSITE</b>{" "}
+                  <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                 </button>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-
       <Outlet />
       <Footer />
     </div>
-
-  )
-
+  );
 }
