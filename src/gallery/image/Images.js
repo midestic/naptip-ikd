@@ -84,31 +84,31 @@ let img59 = "./images/img59.jpg";
 let img60 = "./images/img60.jpg";
 let img61 = "./images/img61.jpg";
 
-let img63 = "./images/img63.jpg";
-let img64 = "./images/img64.jpg";
-let img65 = "./images/img65.jpg";
-let img66 = "./images/img66.jpg";
+let img63 = "./images/img63.jpeg";
+let img64 = "./images/img64.jpeg";
+let img65 = "./images/img65.jpeg";
+let img66 = "./images/img66.jpeg";
 
-let img67 = "./images/img67.jpg";
+let img67 = "./images/img67.jpeg";
 
-let img68 = "./images/img68.jpg";
-let img69 = "./images/img69.jpg";
-let img70 = "./images/img70.jpg";
+let img68 = "./images/img68.jpeg";
+let img69 = "./images/img69.jpeg";
+let img70 = "./images/img70.jpeg";
 
-let img71 = "./images/img71.jpg";
-let img72 = "./images/img72.jpg";
-let img73 = "./images/img73.jpg";
+let img71 = "./images/img71.jpeg";
+let img72 = "./images/img72.jpeg";
+let img73 = "./images/img73.jpeg";
 
-let img74 = "./images/img74.jpg";
-let img75 = "./images/img75.jpg";
-let img76 = "./images/img76.jpg";
+let img74 = "./images/img74.jpeg";
+let img75 = "./images/img75.jpeg";
+let img76 = "./images/img76.jpeg";
 
-let img77 = "./images/img77.jpg";
-let img78 = "./images/img78.jpg";
-let img79 = "./images/img79.jpg";
+let img77 = "./images/img77.jpeg";
+let img78 = "./images/img78.jpeg";
+let img79 = "./images/img79.jpeg";
 
-let img80 = "./images/img80.jpg";
-let img81 = "./images/img81.jpg";
+let img80 = "./images/img80.jpeg";
+let img81 = "./images/img81.jpeg";
 
 export default function Images() {
   let [viewImage, setViewImage] = useState("");
@@ -755,6 +755,217 @@ long images below here */}
             onClick={() => setViewImage(img59)}
           >
             <img src={img59} className="card-img-top" alt="nysc" />
+          </div>
+        </div>
+
+        {/* Ladega market */}
+
+        <div className="col">
+          <div
+            className="card"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            onClick={() => setViewImage(img63)}
+          >
+            <img src={img63} className="card-img-top" alt="nysc" />
+          </div>
+        </div>
+
+        <div className="col">
+          <div
+            className="card"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            onClick={() => setViewImage(img64)}
+          >
+            <img src={img64} className="card-img-top" alt="nysc" />
+          </div>
+        </div>
+
+        <div className="col">
+          <div
+            className="card"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            onClick={() => setViewImage(img65)}
+          >
+            <img src={img65} className="card-img-top" alt="nysc" />
+          </div>
+        </div>
+
+        <div className="col">
+          <div
+            className="card"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            onClick={() => setViewImage(img66)}
+          >
+            <img src={img66} className="card-img-top" alt="nysc" />
+          </div>
+        </div>
+
+        <div className="col">
+          <div
+            className="card"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            onClick={() => setViewImage(img67)}
+          >
+            <img src={img67} className="card-img-top" alt="nysc" />
+          </div>
+        </div>
+
+        <div className="col">
+          <div
+            className="card"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            onClick={() => setViewImage(img68)}
+          >
+            <img src={img68} className="card-img-top" alt="nysc" />
+          </div>
+        </div>
+
+        <div className="col">
+          <div
+            className="card"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            onClick={() => setViewImage(img69)}
+          >
+            <img src={img69} className="card-img-top" alt="nysc" />
+          </div>
+        </div>
+
+        <div className="col">
+          <div
+            className="card"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            onClick={() => setViewImage(img70)}
+          >
+            <img src={img70} className="card-img-top" alt="nysc" />
+          </div>
+        </div>
+
+        <div className="col">
+          <div
+            className="card"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            onClick={() => setViewImage(img71)}
+          >
+            <img src={img71} className="card-img-top" alt="nysc" />
+          </div>
+        </div>
+
+        <div className="col">
+          <div
+            className="card"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            onClick={() => setViewImage(img72)}
+          >
+            <img src={img72} className="card-img-top" alt="nysc" />
+          </div>
+        </div>
+
+        <div className="col">
+          <div
+            className="card"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            onClick={() => setViewImage(img73)}
+          >
+            <img src={img73} className="card-img-top" alt="nysc" />
+          </div>
+        </div>
+
+        <div className="col">
+          <div
+            className="card"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            onClick={() => setViewImage(img74)}
+          >
+            <img src={img74} className="card-img-top" alt="nysc" />
+          </div>
+        </div>
+
+        <div className="col">
+          <div
+            className="card"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            onClick={() => setViewImage(img75)}
+          >
+            <img src={img75} className="card-img-top" alt="nysc" />
+          </div>
+        </div>
+
+        <div className="col">
+          <div
+            className="card"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            onClick={() => setViewImage(img76)}
+          >
+            <img src={img76} className="card-img-top" alt="nysc" />
+          </div>
+        </div>
+
+        <div className="col">
+          <div
+            className="card"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            onClick={() => setViewImage(img77)}
+          >
+            <img src={img77} className="card-img-top" alt="nysc" />
+          </div>
+        </div>
+
+        <div className="col">
+          <div
+            className="card"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            onClick={() => setViewImage(img78)}
+          >
+            <img src={img78} className="card-img-top" alt="nysc" />
+          </div>
+        </div>
+
+        <div className="col">
+          <div
+            className="card"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            onClick={() => setViewImage(img79)}
+          >
+            <img src={img79} className="card-img-top" alt="nysc" />
+          </div>
+        </div>
+
+        <div className="col">
+          <div
+            className="card"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            onClick={() => setViewImage(img80)}
+          >
+            <img src={img80} className="card-img-top" alt="nysc" />
+          </div>
+        </div>
+
+        <div className="col">
+          <div
+            className="card"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            onClick={() => setViewImage(img81)}
+          >
+            <img src={img81} className="card-img-top" alt="nysc" />
           </div>
         </div>
       </div>
