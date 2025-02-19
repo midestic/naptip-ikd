@@ -18,10 +18,17 @@ function ScrollToTop() {
   return null;
 }
 
+function closeNavbar() {
+  const navbarCollapse = document.getElementById("navbarNavDropdown");
+  if (navbarCollapse.classList.contains("show")) {
+    navbarCollapse.classList.remove("show");
+  }
+}
+
 export default function RootLayout() {
   return (
     <div className={`${styles.navComponent} root-layout`}>
-      <ScrollToTop /> {/* Place it here inside Router context */}
+      <ScrollToTop />
       <nav
         className={` ${styles.navContainer} container navbar fixed-top navbar-expand-sm bg-body-tertiary `}
       >
@@ -54,17 +61,25 @@ export default function RootLayout() {
           >
             <ul className={`${styles.navUl} navbar-nav`}>
               <li className="nav-item">
-                <NavLink to="/" className="nav-link active">
+                <NavLink
+                  to="/"
+                  className="nav-link active"
+                  onClick={closeNavbar}
+                >
                   Home
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="aboutus" className="nav-link">
+                <NavLink
+                  to="aboutus"
+                  className="nav-link"
+                  onClick={closeNavbar}
+                >
                   About Us
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="events" className="nav-link">
+                <NavLink to="events" className="nav-link" onClick={closeNavbar}>
                   Events
                 </NavLink>
               </li>
@@ -79,28 +94,42 @@ export default function RootLayout() {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <NavLink to="images" className="dropdown-item">
+                    <NavLink
+                      to="images"
+                      className="dropdown-item"
+                      onClick={closeNavbar}
+                    >
                       Images
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="videos" className="dropdown-item">
+                    <NavLink
+                      to="videos"
+                      className="dropdown-item"
+                      onClick={closeNavbar}
+                    >
                       Videos
                     </NavLink>
                   </li>
                 </ul>
               </li>
               <li className="nav-item">
-                <NavLink to="contact" className="nav-link">
+                <NavLink
+                  to="contact"
+                  className="nav-link"
+                  onClick={closeNavbar}
+                >
                   Contact
                 </NavLink>
               </li>
-              <li className={`${styles.linkWebsite} nav-item`}>
-                <button type="button" className="btn btn-outline-info">
-                  <b>NAPTIP WEBSITE</b>{" "}
-                  <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-                </button>
-              </li>
+              <a href="https://naptip.gov.ng/" target="_blank">
+                <li className={`${styles.linkWebsite} nav-item`}>
+                  <button type="button" className="btn btn-outline-info">
+                    <b>NAPTIP WEBSITE</b>
+                    <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                  </button>
+                </li>
+              </a>
             </ul>
           </div>
         </div>

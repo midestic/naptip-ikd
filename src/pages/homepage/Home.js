@@ -1,3 +1,4 @@
+import { IoMdArrowDropright, IoMdCheckmark } from "react-icons/io";
 import SectionFive from "../../sections/homesect3/sectionFive/SectionFive.js";
 import SectionFour from "../../sections/homesect3/sectionFour/SectionFour.js";
 import SectionSix from "../../sections/homesect3/sectionsix/SectionSix.js";
@@ -5,11 +6,6 @@ import SectionThree from "../../sections/homesect3/sectionThree/SectionThree.js"
 import styles from "./Home.module.css";
 import "./Home.module.css";
 
-import { motion } from "motion/react";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleCheck } from "@fortawesome/duotone-light-svg-icons";
-import { faArrowRight } from "@fortawesome/duotone-light-svg-icons";
 import { NavLink } from "react-router-dom";
 
 let caro1 = "./images/caro1.jpeg";
@@ -192,7 +188,7 @@ export default function Home() {
 
               <div className={`${styles.sect2InnerDiv}`}>
                 <p className={`${styles.sect2InnerDivIcon}`}>
-                  <FontAwesomeIcon icon={faCircleCheck} />
+                  <IoMdCheckmark />
                 </p>
                 <p className="card-text">
                   {" "}
@@ -204,7 +200,7 @@ export default function Home() {
 
               <div className={`${styles.sect2InnerDiv}`}>
                 <p>
-                  <FontAwesomeIcon icon={faCircleCheck} />
+                  <IoMdCheckmark />
                 </p>
                 <p className="card-text">
                   NAPTIP provides rehabilitation, counseling, and reintegration
@@ -214,7 +210,7 @@ export default function Home() {
 
               <div className={`${styles.sect2InnerDiv}`}>
                 <p>
-                  <FontAwesomeIcon icon={faCircleCheck} />
+                  <IoMdCheckmark />
                 </p>
                 <p className="card-text">
                   {" "}
@@ -229,7 +225,7 @@ export default function Home() {
                 {" "}
                 <button className={styles.sect2Btn}>
                   <b>
-                    LEARN MORE <FontAwesomeIcon icon={faArrowRight} />
+                    LEARN MORE <IoMdArrowDropright />
                   </b>
                 </button>{" "}
               </NavLink>

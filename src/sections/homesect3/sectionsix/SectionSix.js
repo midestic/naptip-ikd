@@ -1,7 +1,5 @@
 import styles from "./SectionSix.module.css";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/duotone-light-svg-icons";
 import {
   IoLogoFacebook,
   IoLogoInstagram,
